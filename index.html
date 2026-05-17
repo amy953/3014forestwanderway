@@ -1,0 +1,1155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>3014 Forest Wander Way — East Nashville</title>
+<meta name="description" content="A 4 bedroom, 4 bathroom home in East Nashville with direct access to Shelby Bottoms Greenway. $699,000.">
+
+<meta property="og:title" content="3014 Forest Wander Way — East Nashville">
+<meta property="og:description" content="4 bed / 4 bath in East Greenway Park. Direct greenway access. $699,000.">
+<meta property="og:image" content="images/3014%20hero.jpeg">
+<meta property="og:type" content="website">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=DM+Sans:opsz,wght@9..40,300..700&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --cream: #F4EFE4;
+  --cream-deep: #EBE3D2;
+  --forest: #2C3A2E;
+  --forest-deep: #1A2419;
+  --terracotta: #B45C3D;
+  --terracotta-light: #D89878;
+  --ink: #1F1B16;
+  --ink-soft: #4A4339;
+  --line: rgba(31, 27, 22, 0.12);
+  --font-display: 'Fraunces', Georgia, serif;
+  --font-body: 'DM Sans', system-ui, sans-serif;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: var(--font-body);
+  background: var(--cream);
+  color: var(--ink);
+  line-height: 1.5;
+  font-size: 17px;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+a { color: var(--forest); text-decoration: none; }
+a:hover { color: var(--terracotta); }
+img { display: block; max-width: 100%; height: auto; }
+
+/* ─── Hero ──────────────────────────── */
+.hero {
+  height: 100vh;
+  min-height: 700px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 32px 48px 56px;
+  background:
+    linear-gradient(180deg, rgba(26,36,25,0.15) 0%, rgba(26,36,25,0.45) 60%, rgba(26,36,25,0.7) 100%),
+    url('images/3014%20hero.jpeg') center/cover no-repeat,
+    var(--forest-deep);
+  color: var(--cream);
+}
+
+.hero-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: var(--font-display);
+  font-size: 14px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.hero-nav .mark {
+  font-style: italic;
+  font-weight: 300;
+  letter-spacing: 0.05em;
+  text-transform: none;
+  font-size: 18px;
+}
+
+.hero-content {
+  max-width: 800px;
+  animation: rise 1.4s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+@keyframes rise {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.hero h1 {
+  font-family: var(--font-display);
+  font-weight: 300;
+  font-size: clamp(48px, 9vw, 124px);
+  line-height: 0.95;
+  letter-spacing: -0.02em;
+  font-variation-settings: "opsz" 144;
+  margin-bottom: 24px;
+}
+
+.hero h1 em {
+  font-style: italic;
+  font-weight: 300;
+  color: var(--terracotta-light);
+}
+
+.hero .address {
+  font-family: var(--font-display);
+  font-size: 22px;
+  font-weight: 400;
+  font-style: italic;
+  margin-bottom: 36px;
+  opacity: 0.92;
+}
+
+.hero .price-row {
+  display: flex;
+  align-items: baseline;
+  gap: 28px;
+  font-family: var(--font-display);
+  flex-wrap: wrap;
+}
+
+.hero .price {
+  font-size: 38px;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+}
+
+.hero .stat-divider { opacity: 0.5; }
+
+.hero .stats {
+  font-size: 16px;
+  letter-spacing: 0.05em;
+  font-family: var(--font-body);
+  opacity: 0.9;
+}
+
+/* ─── Section base ──────────────────────────── */
+section {
+  padding: 120px 48px;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.eyebrow {
+  font-family: var(--font-display);
+  font-size: 13px;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: var(--terracotta);
+  margin-bottom: 24px;
+  display: inline-block;
+}
+
+h2 {
+  font-family: var(--font-display);
+  font-weight: 300;
+  font-size: clamp(40px, 5vw, 64px);
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+  color: var(--forest-deep);
+  margin-bottom: 32px;
+  font-variation-settings: "opsz" 144;
+}
+
+h2 em {
+  font-style: italic;
+  font-weight: 300;
+  color: var(--terracotta);
+}
+
+h3 {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: 26px;
+  letter-spacing: -0.01em;
+  margin-bottom: 16px;
+  color: var(--forest-deep);
+}
+
+p { margin-bottom: 1.4em; color: var(--ink-soft); max-width: 65ch; }
+
+p.lead {
+  font-size: 22px;
+  font-family: var(--font-display);
+  font-weight: 300;
+  line-height: 1.4;
+  color: var(--ink);
+  max-width: 30ch;
+}
+
+/* ─── Letter section ──────────────────────────── */
+.letter {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 80px;
+  align-items: start;
+}
+
+.letter-aside { position: sticky; top: 60px; }
+
+.family-photo {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 32px;
+  background: var(--cream-deep);
+  box-shadow: 0 12px 40px rgba(31, 27, 22, 0.12);
+}
+
+.family-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.letter-body p { font-size: 19px; line-height: 1.7; }
+
+.signature {
+  margin-top: 40px;
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 22px;
+  color: var(--forest);
+}
+
+/* ─── Stats strip ──────────────────────────── */
+.stats-strip {
+  background: var(--forest-deep);
+  color: var(--cream);
+  margin: 0;
+  max-width: none;
+  padding: 80px 48px;
+}
+
+.stats-strip-inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 40px;
+}
+
+.stat {
+  text-align: center;
+  padding: 0 12px;
+  border-right: 1px solid rgba(244, 239, 228, 0.18);
+}
+
+.stat:last-child { border-right: none; }
+
+.stat-number {
+  font-family: var(--font-display);
+  font-size: 56px;
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  color: var(--terracotta-light);
+  font-variation-settings: "opsz" 144;
+}
+
+.stat-number small {
+  font-size: 24px;
+  margin-left: 4px;
+  color: var(--cream);
+  opacity: 0.7;
+}
+
+.stat-label {
+  margin-top: 12px;
+  font-size: 12px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  opacity: 0.85;
+}
+
+/* ─── Photo gallery ──────────────────────────── */
+.gallery-section { padding-top: 100px; padding-bottom: 100px; }
+
+.gallery-intro {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  margin-bottom: 64px;
+  align-items: end;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-auto-rows: 110px;
+  gap: 16px;
+}
+
+.gallery-item {
+  background: var(--cream-deep);
+  border-radius: 4px;
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.gallery-item:hover { transform: translateY(-4px); }
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.gallery-item .caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 32px 20px 16px;
+  background: linear-gradient(180deg, transparent 0%, rgba(26,36,25,0.85) 100%);
+  color: var(--cream);
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 15px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.gallery-item:hover .caption { opacity: 1; }
+
+.g1  { grid-column: span 8; grid-row: span 4; }
+.g2  { grid-column: span 4; grid-row: span 2; }
+.g3  { grid-column: span 4; grid-row: span 2; }
+.g4  { grid-column: span 4; grid-row: span 3; }
+.g5  { grid-column: span 4; grid-row: span 3; }
+.g6  { grid-column: span 4; grid-row: span 3; }
+.g7  { grid-column: span 6; grid-row: span 3; }
+.g8  { grid-column: span 6; grid-row: span 3; }
+.g9  { grid-column: span 4; grid-row: span 3; }
+.g10 { grid-column: span 4; grid-row: span 3; }
+.g11 { grid-column: span 4; grid-row: span 3; }
+.g12 { grid-column: span 6; grid-row: span 3; }
+.g13 { grid-column: span 6; grid-row: span 3; }
+
+/* ─── Features grid ──────────────────────────── */
+.features {
+  background: var(--cream);
+  margin: 0;
+  max-width: none;
+  padding: 120px 48px;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.features-inner { max-width: 1280px; margin: 0 auto; }
+
+.features-header {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 80px;
+  margin-bottom: 80px;
+  align-items: end;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 48px 64px;
+}
+
+.feature {
+  border-top: 1px solid var(--line);
+  padding-top: 28px;
+}
+
+.feature-num {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: 400;
+  font-size: 18px;
+  color: var(--terracotta);
+  margin-bottom: 14px;
+  display: block;
+}
+
+.feature p { font-size: 16px; line-height: 1.55; }
+
+/* ─── Third Floor Spotlight ──────────────────── */
+.spotlight {
+  background: var(--forest-deep);
+  color: var(--cream);
+  margin: 0;
+  max-width: none;
+  padding: 120px 48px;
+}
+
+.spotlight-inner {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.spotlight-image-wide {
+  width: 100%;
+  aspect-ratio: 21 / 9;
+  border-radius: 4px;
+  overflow: hidden;
+  background: var(--cream-deep);
+  margin-bottom: 60px;
+  box-shadow: 0 24px 60px rgba(0,0,0,0.3);
+}
+
+.spotlight-image-wide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.spotlight-text-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 80px;
+  align-items: start;
+}
+
+.spotlight-text-grid .eyebrow { color: var(--terracotta-light); }
+
+.spotlight-text-grid h2 {
+  color: var(--cream);
+}
+
+.spotlight-text-grid h2 em {
+  color: var(--terracotta-light);
+}
+
+.spotlight-text-grid p {
+  font-size: 18px;
+  line-height: 1.65;
+  color: rgba(244, 239, 228, 0.85);
+}
+
+.spotlight-list { list-style: none; margin-top: 24px; }
+
+.spotlight-list li {
+  padding: 14px 0;
+  border-bottom: 1px solid rgba(244, 239, 228, 0.15);
+  display: flex;
+  gap: 16px;
+  align-items: baseline;
+  font-size: 17px;
+  color: var(--cream);
+}
+
+.spotlight-list li::before {
+  content: "—";
+  color: var(--terracotta-light);
+  font-family: var(--font-display);
+}
+
+/* ─── Community Section ──────────────────────── */
+.community {
+  background: var(--cream-deep);
+  margin: 0;
+  max-width: none;
+  padding: 120px 48px;
+}
+
+.community-inner { max-width: 1280px; margin: 0 auto; }
+
+.community-header {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 80px;
+  margin-bottom: 64px;
+  align-items: end;
+}
+
+.community-hero {
+  width: 100%;
+  aspect-ratio: 21 / 9;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 16px;
+  position: relative;
+  background: var(--cream);
+}
+
+.community-hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.community-hero-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 60px 32px 28px;
+  background: linear-gradient(180deg, transparent 0%, rgba(26,36,25,0.85) 100%);
+  color: var(--cream);
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 22px;
+  letter-spacing: 0.01em;
+}
+
+.community-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-bottom: 80px;
+}
+
+.community-card {
+  aspect-ratio: 4 / 5;
+  border-radius: 4px;
+  overflow: hidden;
+  position: relative;
+  background: var(--cream);
+}
+
+.community-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.community-card .label {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 48px 20px 20px;
+  background: linear-gradient(180deg, transparent 0%, rgba(26,36,25,0.88) 100%);
+  color: var(--cream);
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 18px;
+}
+
+/* ─── Map Section ─────────────────────────────── */
+.map-section {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 60px;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.map-image {
+  width: 100%;
+  border-radius: 4px;
+  overflow: hidden;
+  background: var(--cream);
+  box-shadow: 0 12px 40px rgba(31, 27, 22, 0.08);
+}
+
+.map-image img { width: 100%; height: auto; display: block; }
+
+.map-text .eyebrow { color: var(--terracotta); }
+
+.map-text h3 {
+  font-family: var(--font-display);
+  font-weight: 300;
+  font-size: 36px;
+  line-height: 1.1;
+  letter-spacing: -0.01em;
+  margin-bottom: 16px;
+  color: var(--forest-deep);
+}
+
+.map-text h3 em { font-style: italic; color: var(--terracotta); }
+
+.amenities-list { list-style: none; margin-top: 24px; }
+
+.amenities-list li {
+  padding: 12px 0;
+  border-bottom: 1px solid var(--line);
+  font-size: 16px;
+  color: var(--ink);
+  font-family: var(--font-body);
+}
+
+.amenities-list li::before {
+  content: "+ ";
+  color: var(--terracotta);
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: 500;
+  margin-right: 6px;
+}
+
+/* ─── Neighborhood ──────────────────────────── */
+.neighborhood-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+
+.neighborhood-list { list-style: none; margin-top: 24px; }
+
+.neighborhood-list li {
+  padding: 18px 0;
+  border-bottom: 1px solid var(--line);
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 24px;
+  font-size: 17px;
+}
+
+.neighborhood-list li span:first-child {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: 400;
+  font-size: 19px;
+  color: var(--ink);
+}
+
+.neighborhood-list li span:last-child {
+  font-size: 14px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  font-family: var(--font-body);
+}
+
+.map-card {
+  background: var(--forest-deep);
+  border-radius: 6px;
+  aspect-ratio: 4 / 5;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 40px;
+  color: var(--cream);
+  background-image:
+    linear-gradient(180deg, rgba(26,36,25,0.55) 0%, rgba(26,36,25,0.95) 100%),
+    url('images/East%20Greenway%20Park%20Community%202.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.map-card .label {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 16px;
+  opacity: 0.7;
+  margin-bottom: 8px;
+}
+
+.map-card .place {
+  font-family: var(--font-display);
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 1.1;
+  margin-bottom: 16px;
+}
+
+.map-card .meta {
+  font-size: 13px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  opacity: 0.85;
+}
+
+/* ─── CTA / Contact ──────────────────────────── */
+.contact {
+  background: var(--forest-deep);
+  color: var(--cream);
+  margin: 0;
+  max-width: none;
+  padding: 140px 48px;
+}
+
+.contact-inner { max-width: 880px; margin: 0 auto; text-align: center; }
+
+.contact h2 { color: var(--cream); margin-bottom: 24px; }
+.contact h2 em { color: var(--terracotta-light); }
+
+.contact p { color: rgba(244, 239, 228, 0.8); margin: 0 auto 48px; }
+
+.cta-row {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 64px;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 18px 36px;
+  font-family: var(--font-body);
+  font-size: 14px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  font-weight: 500;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border: 1px solid transparent;
+}
+
+.btn-primary { background: var(--terracotta); color: var(--cream); }
+
+.btn-primary:hover {
+  background: var(--terracotta-light);
+  color: var(--forest-deep);
+  transform: translateY(-2px);
+}
+
+.btn-secondary {
+  background: transparent;
+  color: var(--cream);
+  border-color: rgba(244, 239, 228, 0.4);
+}
+
+.btn-secondary:hover {
+  border-color: var(--cream);
+  background: rgba(244, 239, 228, 0.06);
+}
+
+.agent-card {
+  display: inline-block;
+  text-align: left;
+  padding-top: 48px;
+  border-top: 1px solid rgba(244, 239, 228, 0.15);
+}
+
+.agent-label {
+  font-size: 12px;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  opacity: 0.6;
+  margin-bottom: 12px;
+}
+
+.agent-name {
+  font-family: var(--font-display);
+  font-size: 28px;
+  font-weight: 400;
+  margin-bottom: 4px;
+}
+
+.agent-name em { font-style: italic; opacity: 0.8; }
+
+.agent-title {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 15px;
+  opacity: 0.7;
+  margin-bottom: 16px;
+  letter-spacing: 0.02em;
+}
+
+.agent-contact { font-size: 15px; opacity: 0.85; letter-spacing: 0.02em; line-height: 1.7; }
+
+.phone-label {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 13px;
+  opacity: 0.6;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  margin-right: 2px;
+}
+
+.agent-contact a {
+  color: var(--terracotta-light);
+  border-bottom: 1px solid rgba(216, 152, 120, 0.4);
+  padding-bottom: 1px;
+}
+
+.agent-contact a:hover { color: var(--cream); border-color: var(--cream); }
+
+/* ─── Footer ──────────────────────────── */
+footer {
+  background: var(--cream);
+  padding: 48px 48px 64px;
+  text-align: center;
+  font-size: 13px;
+  letter-spacing: 0.08em;
+  color: var(--ink-soft);
+  border-top: 1px solid var(--line);
+}
+
+footer .footer-mark {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 22px;
+  margin-bottom: 12px;
+  color: var(--forest);
+}
+
+footer p { max-width: none; margin: 4px 0; color: var(--ink-soft); font-size: 13px; }
+
+/* ─── Mobile ──────────────────────────── */
+@media (max-width: 900px) {
+  section, .spotlight, .community { padding: 80px 24px; }
+  .hero { padding: 24px 24px 40px; }
+
+  .letter,
+  .gallery-intro,
+  .features-header,
+  .neighborhood-grid,
+  .spotlight-text-grid,
+  .community-header,
+  .map-section { grid-template-columns: 1fr; gap: 32px; }
+
+  .spotlight-image-wide { aspect-ratio: 16 / 10; margin-bottom: 32px; }
+
+  .letter-aside { position: static; }
+
+  .stats-strip { padding: 56px 24px; }
+  .stats-strip-inner { grid-template-columns: 1fr 1fr; gap: 32px; }
+  .stat { border-right: none; border-bottom: 1px solid rgba(244, 239, 228, 0.18); padding-bottom: 24px; }
+  .stat:last-child { border-bottom: none; }
+
+  .feature-grid { grid-template-columns: 1fr; gap: 24px; }
+  .contact { padding: 80px 24px; }
+  .features { padding: 80px 24px; }
+
+  .gallery { grid-template-columns: 1fr 1fr; grid-auto-rows: 180px; }
+  .g1, .g2, .g3, .g4, .g5, .g6, .g7, .g8, .g9, .g10, .g11, .g12, .g13 {
+    grid-column: span 2;
+    grid-row: span 1;
+  }
+  .g1 { grid-row: span 2; }
+
+  .gallery-item .caption { opacity: 1; font-size: 13px; padding: 24px 14px 12px; }
+
+  .community-grid { grid-template-columns: 1fr; gap: 16px; }
+  .community-card { aspect-ratio: 16 / 10; }
+}
+</style>
+</head>
+<body>
+
+<!-- ═══ HERO ═══════════════════════════════════ -->
+<section class="hero">
+  <div class="hero-nav">
+    <div class="mark">East Greenway Park</div>
+    <div>Nashville · 37206</div>
+  </div>
+
+  <div class="hero-content">
+    <h1>A home <em>between</em> the city and the trees.</h1>
+    <p class="address">3014 Forest Wander Way · Nashville, TN</p>
+    <div class="price-row">
+      <span class="price">$699,000</span>
+      <span class="stat-divider">·</span>
+      <span class="stats">4 BED · 4 BATH · 2,404 SQ FT</span>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ LETTER FROM THE OWNERS ═══════════════════ -->
+<section>
+  <div class="letter">
+    <aside class="letter-aside">
+      <div class="family-photo">
+        <img src="images/Nashville%20Family%20Photographer%20_%20AluraWayne%20Photography-5.jpg" alt="The Green family">
+      </div>
+      <span class="eyebrow">From the owners</span>
+      <p class="lead">We loved this house. We hope you will too.</p>
+    </aside>
+    <div class="letter-body">
+      <p>When we bought this place, it was the third floor that did it — a wide, light-filled bonus floor with its own bedroom, bathroom, and flex room. It became our favorite part of the house.</p>
+      <p>What we didn't expect was how much we'd come to love the rest of it. The walk out our back gate onto Shelby Bottoms Greenway. Summer evenings at Cornelia Fort listening to bluegrass. Coffee runs to Ugly Mugs. The way our neighbors actually use the firepit on Friday nights.</p>
+      <p>This community was our haven through COVID and through my journey with secondary infertility. The people here have some of the biggest hearts and are some of the sweetest neighbors we've had the privilege to call friends. If that's the kind of community you want to come home to, this is where you should settle.</p>
+      <p>We're moving full-time to our small farm an hour north — a life change we've been working toward for years. The house is move-in ready and waiting for whoever's next. If that's you, we're glad it found you.</p>
+      <p class="signature">— Amy &amp; Isaac</p>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ QUICK STATS STRIP ════════════════════════ -->
+<div class="stats-strip">
+  <div class="stats-strip-inner">
+    <div class="stat"><div class="stat-number">4</div><div class="stat-label">Bedrooms</div></div>
+    <div class="stat"><div class="stat-number">4</div><div class="stat-label">Bathrooms</div></div>
+    <div class="stat"><div class="stat-number">2,404<small>sf</small></div><div class="stat-label">Living Area</div></div>
+    <div class="stat"><div class="stat-number">2018</div><div class="stat-label">Year Built</div></div>
+    <div class="stat"><div class="stat-number">$155<small>/mo</small></div><div class="stat-label">HOA</div></div>
+  </div>
+</div>
+
+<!-- ═══ PHOTO GALLERY ════════════════════════════ -->
+<section class="gallery-section">
+  <div class="gallery-intro">
+    <div>
+      <span class="eyebrow">The Home</span>
+      <h2>Three floors of <em>actual</em> living space.</h2>
+    </div>
+    <p>A bright open main floor, a primary suite plus a kid's bedroom on the second, and a fully finished third floor with its own bedroom, bathroom, and flex room. Four bedrooms, four full bathrooms — real space for a real family.</p>
+  </div>
+
+  <div class="gallery">
+    <div class="gallery-item g1">
+      <img src="images/photo%201%20living.jpeg" alt="Living room">
+      <div class="caption">Living Room</div>
+    </div>
+    <div class="gallery-item g2">
+      <img src="images/photo%202%20kitchen.jpeg" alt="Kitchen">
+      <div class="caption">Kitchen</div>
+    </div>
+    <div class="gallery-item g3">
+      <img src="images/photo%203%20office.jpeg" alt="Main-floor office">
+      <div class="caption">Main-Floor Office</div>
+    </div>
+    <div class="gallery-item g4">
+      <img src="images/photo%205%20master%20bedroom.jpeg" alt="Primary bedroom">
+      <div class="caption">Primary Bedroom</div>
+    </div>
+    <div class="gallery-item g5">
+      <img src="images/photo%206%20master%20bathroom.jpeg" alt="Primary bathroom">
+      <div class="caption">Primary Bathroom</div>
+    </div>
+    <div class="gallery-item g6">
+      <img src="images/photo%207%20master%20walk%20in%20closet.jpeg" alt="Primary walk-in closet">
+      <div class="caption">Primary Walk-In Closet</div>
+    </div>
+    <div class="gallery-item g7">
+      <img src="images/photo%208%20kid%20bedroom%20second%20floor.jpeg" alt="Second-floor bedroom">
+      <div class="caption">Second-Floor Bedroom</div>
+    </div>
+    <div class="gallery-item g8">
+      <img src="images/photo%209%20second%20floor%20full%20bath.jpeg" alt="Second-floor full bath">
+      <div class="caption">Second-Floor Full Bath</div>
+    </div>
+    <div class="gallery-item g9">
+      <img src="images/3rd%20Floor%20Bonus%20Room.jpeg" alt="Third-floor bonus room">
+      <div class="caption">Third-Floor Bonus Room</div>
+    </div>
+    <div class="gallery-item g10">
+      <img src="images/third-floor-office.jpeg" alt="Third-floor office or bedroom">
+      <div class="caption">Third-Floor Office / Bedroom</div>
+    </div>
+    <div class="gallery-item g11">
+      <img src="images/photo%2013%203rd%20floor%20bedroom.jpeg" alt="Third-floor bedroom">
+      <div class="caption">Third-Floor Bedroom</div>
+    </div>
+    <div class="gallery-item g12">
+      <img src="images/photo%2012%203rd%20floor%20full%20bath.jpeg" alt="Third-floor full bath">
+      <div class="caption">Third-Floor Full Bath</div>
+    </div>
+    <div class="gallery-item g13">
+      <img src="images/photo%204%201st%20floor%20full%20bath.jpeg" alt="First-floor full bath">
+      <div class="caption">First-Floor Full Bath</div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ THIRD FLOOR SPOTLIGHT ════════════════════ -->
+<div class="spotlight">
+  <div class="spotlight-inner">
+    <div class="spotlight-image-wide">
+      <img src="images/3rd%20Floor%20Bonus%20Room.jpeg" alt="Third floor bonus space">
+    </div>
+    <div class="spotlight-text-grid">
+      <div>
+        <span class="eyebrow">A Third Floor That Pays Off</span>
+        <h2>An entire <em>floor</em> of flexibility.</h2>
+      </div>
+      <div>
+        <p>What sets this home apart isn't just the square footage — it's the layout. A finished third floor that gives you essentially a self-contained suite at the top of the house.</p>
+        <ul class="spotlight-list">
+          <li>A full bedroom with natural light</li>
+          <li>A second flex room — office, nursery, second bedroom, or studio</li>
+          <li>A wide-open bonus room (playroom, theater, gym, take your pick)</li>
+          <li>Its own full bathroom</li>
+        </ul>
+        <p style="margin-top: 24px;">Perfect for guests, in-laws, teens who want their own space, or a work-from-home setup that actually feels separate from family life.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ FEATURES ═════════════════════════════════ -->
+<div class="features">
+  <div class="features-inner">
+    <div class="features-header">
+      <div>
+        <span class="eyebrow">What's Special</span>
+        <h2>The details that <em>matter</em>.</h2>
+      </div>
+      <p>The things photos don't always capture — what made daily life here feel different than the other homes we looked at.</p>
+    </div>
+
+    <div class="feature-grid">
+      <div class="feature">
+        <span class="feature-num">01</span>
+        <h3>Direct Greenway Access</h3>
+        <p>Step out onto Shelby Bottoms — 1,300 acres of trails, river views, and quiet just minutes from downtown.</p>
+      </div>
+      <div class="feature">
+        <span class="feature-num">02</span>
+        <h3>Three Full Floors</h3>
+        <p>Four bedrooms and four full baths across three real floors, plus a main-floor office. Room to grow into.</p>
+      </div>
+      <div class="feature">
+        <span class="feature-num">03</span>
+        <h3>Main-Floor Office</h3>
+        <p>A dedicated workspace on the first floor — perfect for remote work, a fifth sleeping space, or a quiet reading room.</p>
+      </div>
+      <div class="feature">
+        <span class="feature-num">04</span>
+        <h3>Real Community</h3>
+        <p>East Greenway Park is small and tight-knit. Firepit, dog park, community garden, picnic area. Neighbors who actually know each other.</p>
+      </div>
+      <div class="feature">
+        <span class="feature-num">05</span>
+        <h3>Newer Construction</h3>
+        <p>Built in 2018 with modern systems, wood floors throughout, gas fireplace, and the kind of layout that just works for families.</p>
+      </div>
+      <div class="feature">
+        <span class="feature-num">06</span>
+        <h3>Parking That Works</h3>
+        <p>Our own one-car garage and a dedicated parking spot reserved just for the house. Additional guest parking right next to the home too — rare for East Nashville.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ COMMUNITY ════════════════════════════════ -->
+<div class="community">
+  <div class="community-inner">
+    <div class="community-header">
+      <div>
+        <span class="eyebrow">The Community</span>
+        <h2>The people who made this <em>home</em>.</h2>
+      </div>
+      <p>A community in the real sense of the word. Friday night firepits. Concerts at Cornelia Fort. A dog park where dogs and humans alike actually know each other. The kind of place where neighbors became friends — and neighbors became the people who held us through hard seasons. East Greenway Park isn't just where we lived. It's the home we'll miss most.</p>
+    </div>
+
+    <div class="community-hero">
+      <img src="images/East%20Greenway%20Park%20Community.jpg" alt="East Greenway Park community">
+      <div class="community-hero-caption">East Greenway Park</div>
+    </div>
+
+    <div class="community-grid">
+      <div class="community-card">
+        <img src="images/cornelia%20fork%20airpark.jpeg" alt="Cornelia Fort Airpark and concerts">
+        <div class="label">Cornelia Fort Airpark &amp; Concerts</div>
+      </div>
+      <div class="community-card">
+        <img src="images/East%20Greenway%20Park%20Fire%20Pit.jpg" alt="Community fire pit">
+        <div class="label">Friday Night Firepits</div>
+      </div>
+      <div class="community-card">
+        <img src="images/East%20Greenway%20Park%20Dog%20Park.jpg" alt="East Greenway Park dog park">
+        <div class="label">EGP Dog Park</div>
+      </div>
+      <div class="community-card">
+        <img src="images/East%20Greenway%20Park%20Community%202.jpg" alt="East Greenway Park community gathering">
+        <div class="label">Neighbors &amp; Friends</div>
+      </div>
+    </div>
+
+    <div class="map-section">
+      <div class="map-image">
+        <img src="images/Shelby%20Park.jpeg" alt="Shelby Park and Bottoms map">
+      </div>
+      <div class="map-text">
+        <span class="eyebrow">Out the Back Gate</span>
+        <h3>Nearly <em>1,300 acres</em> of parkland — right at your door.</h3>
+        <p>Shelby Park &amp; Bottoms is one of Nashville's largest urban parks, with direct access from East Greenway Park. Trails, river overlooks, a nature center, and a connection to Nashville's larger greenway system.</p>
+        <ul class="amenities-list">
+          <li>Community garden</li>
+          <li>Picnic areas with grills</li>
+          <li>Firepits to host social nights</li>
+          <li>Direct trail access to Shelby Bottoms</li>
+          <li>Cornelia Fort Airpark — concerts &amp; events</li>
+          <li>Shelby Park Nature Center</li>
+          <li>1,300 acres connecting to Nashville's larger greenway (great for bikers!)</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ NEIGHBORHOOD ═════════════════════════════ -->
+<section>
+  <div class="neighborhood-grid">
+    <div>
+      <span class="eyebrow">The Neighborhood</span>
+      <h2>East Nashville, on the <em>good side</em> of everything.</h2>
+      <p>Tucked between Rosebank and Eastland in 37206 — one of the most walkable, food-loving, music-soaked corners of the city. Eight minutes to downtown, but it feels like its own world.</p>
+
+      <ul class="neighborhood-list">
+        <li><span>Shelby Bottoms Greenway</span><span>at the back gate</span></li>
+        <li><span>Cornelia Fort Airpark</span><span>5 min walk</span></li>
+        <li><span>Ugly Mugs Coffee</span><span>walkable</span></li>
+        <li><span>Rosebank Elementary</span><span>0.5 mi</span></li>
+        <li><span>Downtown Nashville</span><span>8 min drive</span></li>
+        <li><span>Vanderbilt Medical</span><span>15 min</span></li>
+        <li><span>Nashville Int'l Airport</span><span>15 min</span></li>
+      </ul>
+    </div>
+
+    <div class="map-card">
+      <div class="label">Listed in</div>
+      <div class="place">East Greenway Park</div>
+      <div class="meta">Nashville · TN · 37206</div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ CONTACT ══════════════════════════════════ -->
+<div class="contact">
+  <div class="contact-inner">
+    <span class="eyebrow" style="color: var(--terracotta-light);">Schedule a Visit</span>
+    <h2>Come see it in <em>person</em>.</h2>
+    <p>Walk the greenway, see the third floor, meet the neighbors. The best way to understand this house is to spend a few minutes in it.</p>
+
+    <div class="cta-row">
+      <a href="https://www.zillow.com/homedetails/3014-Forest-Wander-Way-Nashville-TN-37206/248421155_zpid/" class="btn btn-primary" target="_blank" rel="noopener">View Full Listing →</a>
+      <a href="mailto:deborah.vahle@compass.com?subject=3014 Forest Wander Way - Tour Request" class="btn btn-secondary">Schedule a Tour</a>
+    </div>
+
+    <div class="agent-card">
+      <div class="agent-label">Listed by</div>
+      <div class="agent-name">Deborah <em>Vahle</em></div>
+      <div class="agent-title">Affiliate Broker · Compass</div>
+      <div class="agent-contact">
+        <a href="mailto:deborah.vahle@compass.com">deborah.vahle@compass.com</a><br>
+        <span class="phone-label">M:</span> <a href="tel:+16153350770">615.335.0770</a>
+        &nbsp;&nbsp;·&nbsp;&nbsp;
+        <span class="phone-label">O:</span> <a href="tel:+16153836964">615.383.6964</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ FOOTER ═══════════════════════════════════ -->
+<footer>
+  <div class="footer-mark">3014 Forest Wander Way</div>
+  <p>MLS #3191722 · Listed by Deborah Vahle, Compass</p>
+  <p>Information believed accurate but not guaranteed. Equal Housing Opportunity.</p>
+</footer>
+
+</body>
+</html>
